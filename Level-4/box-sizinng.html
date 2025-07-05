@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Padding Property</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            border:0;
+
+        }
+        .padded{
+        height:50px;
+        width:50px;
+        padding: 5px;
+        margin:5px;
+
+        }
+    #First{
+        box-sizing: content-box;
+        border:2px solid;
+        background-color:red;
+    }
+    #Second{
+        box-sizing: border-box;
+        background-color:slateblue;
+        border:3px dashed red;
+    }
+    </style>
+</head>
+<body>
+    <div id="First" class="padded">Padding Checker</div>
+    <div id="Second" class="padded">Padding Checker</div>
+</body>
+</html>
