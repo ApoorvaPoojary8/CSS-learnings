@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Css Animation</title>
+    <style>
+       #box{
+        height:100px;
+        width:100px;
+        background-color: aquamarine;
+        border:2px solid black;
+        border-radius: 5px;
+        position:relative;
+        top:10px;
+        left:10px;
+        transition:all 2sec ease-in;
+        animation-name: moving;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1sec;
+
+        animation-iteration-count:infinite;
+        animation-direction: reverse;
+       }
+
+       
+       @keyframes moving {
+        from{
+            left:10px;
+        }
+        to{
+            left:200px;
+
+        }  
+       }
+    </style>
+</head>
+<body>
+   <div id="box">Animation</div>
+
+
+
+
+
+
+    
+</body>
+</html>
